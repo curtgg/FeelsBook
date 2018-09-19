@@ -18,10 +18,12 @@ public class Feels extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_feels:
-                    mTextMessage.setText(R.string.title_feels);
+                    //mTextMessage.setText(R.string.title_feels);
                     return true;
                 case R.id.navigation_book:
-                    mTextMessage.setText(R.string.title_book);
+                    //mTextMessage.setText(R.string.title_book);
+                    System.out.print("yo");
+                    ViewController.newActivity(Feels.this,book.class);
                     return true;
             }
             return false;
