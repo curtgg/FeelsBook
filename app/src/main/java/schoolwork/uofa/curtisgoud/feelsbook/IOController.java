@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 
 import com.google.gson.reflect.TypeToken;
@@ -21,7 +22,7 @@ public class IOController {
             Type typeList = new TypeToken<ArrayList<Feel>>(){}.getType();
             return gson.fromJson(reader,typeList);
         } catch(Exception e){
-
+            Log.d("FeelsIOException",e.toString());
         }
         return new ArrayList<Feel>();
     }
@@ -34,7 +35,7 @@ public class IOController {
             gson.toJson(feels,osw);
             osw.close();
         } catch(Exception e){
-
+            Log.d("FeelsIOException",e.toString());
         }
     }
 }
