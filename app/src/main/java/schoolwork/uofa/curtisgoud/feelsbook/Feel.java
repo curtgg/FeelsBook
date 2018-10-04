@@ -14,6 +14,10 @@ public class Feel {
         this.feelingText = text;
     }
 
+    Feel(){
+
+    }
+
     public String getFeelingText(){
         return feelingText;
     }
@@ -24,6 +28,10 @@ public class Feel {
 
     public void setDate(Date date){
         this.timestamp = date;
+    }
+
+    public EFeeling getFeelingType(){
+        return this.EFeeling;
     }
 
     public String getDateString(){

@@ -20,14 +20,17 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
 
     private FeelingController feelingController;
     private Feel selectedFeeling;
+    private int year,month,day;
+    private int hour, min;
 
     private Button saveButton;
     private Button dateButton;
+    private Button deleteButton;
     private TextView feelingText;
     private TextView dateText;
     private EditText feelingEditText;
-
-    private Date newDate = new Date();
+    private int Feelidx;
+    private Calendar newDate = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +42,11 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
         feelingText = (TextView) findViewById(R.id.feelingText);
         dateText = (TextView) findViewById(R.id.dateText);
         feelingEditText = (EditText) findViewById(R.id.feelingEditText);
-
+        deleteButton = (Button) findViewById(R.id.buttonDelete);
         feelingController = new FeelingController(this);
 
-        int FeelIdx = getIntent().getExtras().getInt("ARG_IDX");
-        selectedFeeling = feelingController.getFeelingByIdx(FeelIdx);
+        Feelidx = getIntent().getExtras().getInt("ARG_IDX");
+        selectedFeeling = feelingController.getFeelingByIdx(Feelidx);
         Log.d("FeelingOut",selectedFeeling.toString());
         initView();
     }
@@ -66,11 +69,18 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
                 editDate();
             }
         });
+
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                feelingController.removeFeel(Feelidx);
+                ViewController.newActivity(FeelItem.this,Feels.class);
+            }
+        });
     }
 
     public void saveFeel(){
         feelingController.setFeelingMessage(selectedFeeling,feelingEditText.getText().toString());
-        //TODO:feelingController.setDate();
         Toast.makeText(this,"Changes Saved!",Toast.LENGTH_SHORT).show();
     }
 
@@ -85,7 +95,9 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
     }
 
     public void updateDate(){
-        feelingController.setDate(selectedFeeling,newDate);
+        newDate.set(year,month,day,hour,min);
+        Date msDate = newDate.getTime();
+        feelingController.setDate(selectedFeeling,msDate);
         initView();
     }
 
@@ -96,10 +108,9 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
         Calendar cal = Calendar.getInstance();
         int hour = cal.get(cal.HOUR);
         int minute = cal.get(cal.MINUTE);
-        newDate.setYear(year);
-        newDate.setMonth(month);
-        newDate.setDate(dayOfMonth);
-
+        this.year = year;
+        this.month = month;
+        this.day = dayOfMonth;
         TimePickerDialog timePicker = new TimePickerDialog(this,this,hour,minute,true);
         timePicker.show();
     }
@@ -107,8 +118,8 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
     @Override
     @SuppressWarnings("deprecation")
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-        newDate.setHours(hourOfDay);
-        newDate.setMinutes(minute);
+        this.hour = hourOfDay;
+        this.min = minute;
         updateDate();
     }
 }

@@ -1,5 +1,6 @@
 package schoolwork.uofa.curtisgoud.feelsbook;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -105,13 +106,7 @@ public class Feels extends AppCompatActivity {
         setContentView(R.layout.activity_feels);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationMenu);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        //TODO: PASS IN UI ELEMENT TO ATTACH TO ADAPTER
-        lovePanel = (EditText) findViewById(R.id.feelsLove);
-        surprisePanel = (EditText) findViewById(R.id.feelsSurprise);
-        fearPanel = (EditText) findViewById(R.id.feelsFear);
-        joyPanel = (EditText) findViewById(R.id.feelsJoy);
-        sadnessPanel = (EditText) findViewById(R.id.feelsSadness);
-        angerPanel = (EditText) findViewById(R.id.feelsAnger);
+
 
         initListeners();
     }
@@ -119,7 +114,27 @@ public class Feels extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
+        FeelingController.context = this;
         feelingController = new FeelingController(this);
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        lovePanel = (EditText) findViewById(R.id.feelsLove);
+        surprisePanel = (EditText) findViewById(R.id.feelsSurprise);
+        fearPanel = (EditText) findViewById(R.id.feelsFear);
+        joyPanel = (EditText) findViewById(R.id.feelsJoy);
+        sadnessPanel = (EditText) findViewById(R.id.feelsSadness);
+        angerPanel = (EditText) findViewById(R.id.feelsAnger);
+
+        lovePanel.setText(EFeeling.LOVE.toString() + ": " + feelingController.getFeelCount(EFeeling.LOVE));
+        surprisePanel.setText(EFeeling.SURPRISE.toString() + ": " + feelingController.getFeelCount(EFeeling.SURPRISE));
+        fearPanel.setText(EFeeling.FEAR.toString() + ": " + feelingController.getFeelCount(EFeeling.FEAR));
+        joyPanel.setText(EFeeling.JOY.toString() + ": " + feelingController.getFeelCount(EFeeling.JOY));
+        sadnessPanel.setText(EFeeling.SADNESS.toString() + ": " + feelingController.getFeelCount(EFeeling.SADNESS));
+        angerPanel.setText(EFeeling.ANGER.toString() + ": " + feelingController.getFeelCount(EFeeling.ANGER));
+
     }
 
     //Info on Alerts obtained here:
@@ -134,15 +149,15 @@ public class Feels extends AppCompatActivity {
                 ViewController.newActivity(Feels.this,FeelItem.class,-1);
             }
         });
-
         builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                //No action
+                ViewController.newActivity(Feels.this,Book.class);
                 return;
             }
         });
         AlertDialog dialog = builder.create();
         builder.show();
     }
+
 }
