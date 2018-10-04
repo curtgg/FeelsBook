@@ -6,9 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class book extends AppCompatActivity {
+public class Book extends AppCompatActivity {
 
     private ListView moodList;
     private FeelingController feelingController;
@@ -20,7 +22,7 @@ public class book extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_feels:
-                    ViewController.newActivity(book.this,Feels.class);
+                    ViewController.newActivity(Book.this,Feels.class);
                     return true;
                 case R.id.navigation_book:
                     return true;
@@ -40,10 +42,14 @@ public class book extends AppCompatActivity {
         feelingController.setAdapter(moodList);
         nav.setSelectedItemId(R.id.navigation_book);
         nav.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        moodList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Open page of specific item
+                ViewController.newActivity(Book.this,FeelItem.class,(int)id);
+            }
+        });
     }
 
-    @Override
-    protected void onStart(){
-        super.onStart();
-    }
 }

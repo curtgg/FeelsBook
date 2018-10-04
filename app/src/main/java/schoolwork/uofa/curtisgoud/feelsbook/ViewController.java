@@ -19,6 +19,7 @@ public final class ViewController {
 
     public static <T extends AppCompatActivity> boolean  newActivity(Context context,Class<T> activityClass,int idx){
         Intent intent = new Intent(context, activityClass);
+        //TODO: Credit android docs for this
         intent.putExtra("ARG_IDX",idx);
         try{
             context.startActivity(intent);

@@ -35,7 +35,7 @@ public class Feels extends AppCompatActivity {
                 case R.id.navigation_feels:
                     return true;
                 case R.id.navigation_book:
-                    ViewController.newActivity(Feels.this,book.class);
+                    ViewController.newActivity(Feels.this,Book.class);
                     return true;
             }
             return false;

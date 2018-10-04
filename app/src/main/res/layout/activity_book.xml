@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:padding="5dp"
-    tools:context=".book">
+    tools:context=".Book">
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigationMenu"
