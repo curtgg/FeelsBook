@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class FeelingController {
 
@@ -25,8 +26,28 @@ public class FeelingController {
 
     }
 
+    public String getFeelingType(Feel feel){
+        return feel.getFeelingString();
+    }
+
+    public String getFeelingMessage(Feel feel){
+        return feel.getFeelingText();
+    }
+
+    public String getFeelingDateString(Feel feel){
+        return feel.getDateString();
+    }
+
     public void setFeelingMessage(Feel feel,String message){
         feel.setFeelingText(message);
+        feelAdapter.notifyDataSetChanged();
+
+    }
+
+    public void setDate(Feel feel,Date date){
+        feel.setDate(date);
+        feelAdapter.notifyDataSetChanged();
+
     }
 
     public Feel getFeelingByIdx(int idx){

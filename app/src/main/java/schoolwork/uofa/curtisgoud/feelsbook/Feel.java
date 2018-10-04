@@ -22,10 +22,22 @@ public class Feel {
         this.feelingText = s;
     }
 
+    public void setDate(Date date){
+        this.timestamp = date;
+    }
+
+    public String getDateString(){
+        //TODO: Credit http://tutorials.jenkov.com/java-date-time/parsing-formatting-dates.html
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
+        return format.format(timestamp);
+    }
+
+    public String getFeelingString(){
+        return EFeeling.toString();
+    }
+
     @Override
     public String toString(){
-        //TODO: ENSURE PROPER DATE FORMAT
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
-        return "\n" + format.format(timestamp) + "\n" + EFeeling.toString() + "\n";
+        return "\n" + getDateString() + "\n" + getFeelingString() + "\n";
     }
 }
