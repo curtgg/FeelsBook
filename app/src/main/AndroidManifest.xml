@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".book"></activity>
+        <activity android:name=".book" />
+        <activity android:name=".FeelItem"></activity>
     </application>
 
 </manifest>

@@ -10,58 +10,119 @@
     tools:context=".Feels"
     tools:layout_editor_absoluteY="81dp">
 
+    <Button
+        android:id="@+id/buttonJoy"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorJoy"
+        android:text="Post Feel"
+        app:layout_constraintBottom_toBottomOf="@+id/feelsJoy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feelsJoy"
+        app:layout_constraintTop_toTopOf="@+id/feelsJoy" />
+
+    <Button
+        android:id="@+id/buttonFear"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorFear"
+        android:text="Post Feel"
+        app:layout_constraintBottom_toTopOf="@+id/feelsJoy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feelsFear"
+        app:layout_constraintTop_toBottomOf="@+id/feelsLove" />
+
+    <Button
+        android:id="@+id/buttonLove"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorLove"
+        android:text="Post Feel"
+        app:layout_constraintBottom_toBottomOf="@+id/feelsLove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feelsLove"
+        app:layout_constraintTop_toTopOf="@+id/feelsLove" />
+
+    <Button
+        android:id="@+id/buttonSadness"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorSadness"
+        android:text="Post Feel"
+        app:layout_constraintBottom_toTopOf="@+id/feelsAnger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feelsSadness"
+        app:layout_constraintTop_toBottomOf="@+id/feelsSurprise" />
+
     <EditText
         android:id="@+id/feelsFear"
         android:layout_width="0dp"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorFear"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
+        android:padding="10dp"
         android:text="Fear: 0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/feelsSadness"
-        app:layout_constraintTop_toBottomOf="@+id/feelsAnger" />
+        app:layout_constraintEnd_toEndOf="@+id/feelsLove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelsLove" />
 
     <EditText
         android:id="@+id/feelsSadness"
-        android:layout_width="154dp"
-        android:layout_height="66dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorSadness"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
+        android:padding="10dp"
         android:text="Sadness: 0"
-        app:layout_constraintEnd_toStartOf="@+id/feelsFear"
+        app:layout_constraintEnd_toEndOf="@+id/feelsSurprise"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feelsSurprise" />
 
     <EditText
         android:id="@+id/feelsAnger"
         android:layout_width="0dp"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorAnger"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
+        android:padding="10dp"
         android:text="Anger: 0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/feelsSurprise"
-        app:layout_constraintTop_toBottomOf="@+id/feelsJoy" />
+        app:layout_constraintEnd_toEndOf="@+id/feelsSadness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelsSadness" />
 
     <EditText
         android:id="@+id/feelsSurprise"
-        android:layout_width="154dp"
-        android:layout_height="66dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="@color/colorSurprise"
         android:editable="false"
         android:ems="10"
+        android:fadingEdge="none"
         android:inputType="none"
+        android:padding="10dp"
         android:text="Surprise: 0"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/feelsSadness"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feelsLove" />
+        app:layout_constraintTop_toBottomOf="@+id/title_main"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
         android:id="@+id/title_main"
@@ -72,6 +133,7 @@
         android:padding="0dp"
         android:text="Feels Book"
         android:textSize="30sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -89,54 +151,56 @@
 
     <EditText
         android:id="@+id/feelsLove"
-        android:layout_width="154dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="312dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorLove"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
+        android:padding="10dp"
         android:text="Love: 0"
-        app:layout_constraintBottom_toTopOf="@+id/navigationMenu"
+        app:layout_constraintEnd_toEndOf="@+id/feelsAnger"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_main"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/feelsAnger" />
 
     <EditText
         android:id="@+id/feelsJoy"
         android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="312dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorJoy"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
+        android:padding="10dp"
         android:text="Joy: 0"
-        app:layout_constraintBottom_toTopOf="@+id/navigationMenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/feelsLove"
-        app:layout_constraintTop_toBottomOf="@+id/title_main"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/feelsTextBox"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/navigationMenu"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/feelsFear"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feelsSadness" />
+        app:layout_constraintTop_toBottomOf="@+id/feelsFear" />
+
+    <Button
+        android:id="@+id/buttonSurprise"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorSurprise"
+        android:text="Post Feel"
+        app:layout_constraintBottom_toBottomOf="@+id/feelsSurprise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feelsSurprise"
+        app:layout_constraintTop_toTopOf="@+id/feelsSurprise" />
+
+    <Button
+        android:id="@+id/buttonAnger"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorAnger"
+        android:text="Post Feel"
+        app:layout_constraintBottom_toTopOf="@+id/feelsLove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feelsAnger"
+        app:layout_constraintTop_toTopOf="@+id/feelsAnger" />
 
 </android.support.constraint.ConstraintLayout>

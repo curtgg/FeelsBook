@@ -3,4 +3,8 @@
     <string name="title_feels">Feels</string>
     <string name="title_book">Book</string>
     <string name="title_activity_book">Book</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
 </resources>

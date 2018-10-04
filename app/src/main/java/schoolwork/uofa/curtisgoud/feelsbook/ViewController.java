@@ -16,4 +16,15 @@ public final class ViewController {
             return false;
         }
     }
+
+    public static <T extends AppCompatActivity> boolean  newActivity(Context context,Class<T> activityClass,int idx){
+        Intent intent = new Intent(context, activityClass);
+        intent.putExtra("ARG_IDX",idx);
+        try{
+            context.startActivity(intent);
+            return true;
+        } catch(Exception e){
+            return false;
+        }
+    }
 }
