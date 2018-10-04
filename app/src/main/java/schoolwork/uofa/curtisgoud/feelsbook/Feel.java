@@ -1,9 +1,11 @@
 package schoolwork.uofa.curtisgoud.feelsbook;
 
+import android.support.annotation.NonNull;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Feel {
+public class Feel implements Comparable<Feel> {
     private EFeeling EFeeling;
     private Date timestamp;
     private String feelingText;
@@ -30,13 +32,17 @@ public class Feel {
         this.timestamp = date;
     }
 
+    public Date getFeelDate(){
+        return this.timestamp;
+    }
+
     public EFeeling getFeelingType(){
         return this.EFeeling;
     }
 
     public String getDateString(){
         //TODO: Credit http://tutorials.jenkov.com/java-date-time/parsing-formatting-dates.html
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         return format.format(timestamp);
     }
 
@@ -47,5 +53,10 @@ public class Feel {
     @Override
     public String toString(){
         return "\n" + getDateString() + "\n" + getFeelingString() + "\n";
+    }
+
+    @Override
+    public int compareTo(Feel o) {
+        return o.getFeelDate().compareTo(this.getFeelDate());
     }
 }

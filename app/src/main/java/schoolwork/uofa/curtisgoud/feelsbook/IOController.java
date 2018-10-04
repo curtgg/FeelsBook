@@ -23,7 +23,7 @@ public class IOController {
         } catch(Exception e){
 
         }
-        return null;
+        return new ArrayList<Feel>();
     }
 
     static void saveToDisk(ArrayList<Feel> feels){

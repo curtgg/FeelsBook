@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 
@@ -22,7 +23,7 @@ public class FeelingController {
     public FeelingController(Activity activity){
         //First time run.. init
         if(feelings == null) {
-            feelings = new ArrayList<>();
+            feelings = new ArrayList<Feel>();
             feelingCount = new HashMap<EFeeling,Integer>(){ //Initialize Dict with Enums
                 {
                     put(EFeeling.LOVE,0);
@@ -35,7 +36,8 @@ public class FeelingController {
             };
             feelings = IOController.loadFromDisk();
             feelAdapter = new ArrayAdapter<Feel>(activity, R.layout.list_layout, feelings);
-            this.countFeels();
+            countFeels();
+            sortFeels();
             feelAdapter.notifyDataSetChanged();
         }
     }
@@ -69,6 +71,7 @@ public class FeelingController {
 
     public void setDate(Feel feel,Date date){
         feel.setDate(date);
+        sortFeels();
         IOController.saveToDisk(feelings);
         feelAdapter.notifyDataSetChanged();
     }
@@ -87,6 +90,7 @@ public class FeelingController {
         feelings.add(Fl);
         addFeelCount(Fl);
         IOController.saveToDisk(feelings);
+        sortFeels();
         feelAdapter.notifyDataSetChanged();
         Log.d("Feelsbook","new feeling! " + Fl.getFeelingText());
     }
@@ -95,6 +99,7 @@ public class FeelingController {
         this.removeFeelCount(feelings.get(idx));
         feelings.remove(idx);
         IOController.saveToDisk(feelings);
+        sortFeels();
         feelAdapter.notifyDataSetChanged();
     }
 
@@ -108,10 +113,12 @@ public class FeelingController {
     }
 
     private void countFeels(){
-        for(Feel f: feelings){
-            int c = feelingCount.get(f.getFeelingType());
-            c = c+1;
-            feelingCount.put(f.getFeelingType(),c);
+        if(feelings != null){
+            for(Feel f: feelings){
+                int c = feelingCount.get(f.getFeelingType());
+                c = c+1;
+                feelingCount.put(f.getFeelingType(),c);
+            }
         }
     }
 
@@ -119,12 +126,18 @@ public class FeelingController {
         int c = feelingCount.get(f.getFeelingType());
         c = c+1;
         feelingCount.put(f.getFeelingType(),c);
+        sortFeels();
     }
 
     private void removeFeelCount(Feel f){
         int c = feelingCount.get(f.getFeelingType());
         c = c-1;
         feelingCount.put(f.getFeelingType(),c);
+        sortFeels();
+    }
+
+    private void sortFeels(){
+        Collections.sort(feelings);
     }
 
 
