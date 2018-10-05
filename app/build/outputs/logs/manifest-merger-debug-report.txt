@@ -1,0 +1,175 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/216879f3e60944809f1dfe5df618a2ab/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/8bbaed736d22b0bc7cc455958461ff94/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6486be6f3a410b4abdb0293895bf0b68/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/226b1492b4913e7e44c9c1fb023b1889/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/115079b952cf88522d0298ccc3a66e7f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/f80b96a596ac52d2336ca9875fee889c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/5a14f9de07aaeb40a23403042c705f87/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/c3335bd4d1d182803341ec71c1d691de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/814e0b0ff971d063095527af94317f7f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/a63e30eed24d4b9db597a878f5479b8b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/dfe2dcedbd79d7bdc4c2e6d3cee9aa83/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/5cdf14a719e257c34405a2927591ea22/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/c74cda7d5b0c2ede73f16fc142590fa8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/bff675fc8b34851fa40c22414af63bd5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/373a3a0d551a823ae0dbb4f94d177d9b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/70b66cbd1ebf92b672e1b78595208f80/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/860b62ad2adfc7244a90418f84c7d03e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/1f6f06e5b9aa85e6519b36d11ff1a092/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/1e61bd30cff359eda708daeef0f13c44/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/419ddb37f365e8dc344808c4de9e8d6c/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/8339a1e4484a2959ae6d1e613a205bb2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/5377e9854105613d62afc41eac3979db/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d8c3e34d18d08af43b42fd7ba5a65342/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/ffd6874b00bdc6cfedffafc6be537340/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/1a1ecb3dbb6504b1a37f56ecee9e949c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/9d773b1aa2e7931c5869d1281c38152d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fec51e73d71902423e17f38cfb8fb8cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/bbb9a8dc273e20a71932f1de0c1bba24/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a759b2a0176538b7b2bbb6445743cea2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/31fefb5a83e6b7ae2a009314cdefe448/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/216879f3e60944809f1dfe5df618a2ab/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/216879f3e60944809f1dfe5df618a2ab/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6486be6f3a410b4abdb0293895bf0b68/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6486be6f3a410b4abdb0293895bf0b68/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/1e61bd30cff359eda708daeef0f13c44/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/1e61bd30cff359eda708daeef0f13c44/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/419ddb37f365e8dc344808c4de9e8d6c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/419ddb37f365e8dc344808c4de9e8d6c/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/1e61bd30cff359eda708daeef0f13c44/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:11:9-40
+activity#schoolwork.uofa.curtisgoud.feelsbook.Feels
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:14:13-45
+	android:name
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:13:13-34
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:18:27-74
+activity#schoolwork.uofa.curtisgoud.feelsbook.Book
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:21:9-42
+	android:name
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:21:19-39
+activity#schoolwork.uofa.curtisgoud.feelsbook.FeelItem
+ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:22:9-55
+	android:name
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml:22:19-43
+uses-sdk
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/216879f3e60944809f1dfe5df618a2ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/216879f3e60944809f1dfe5df618a2ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/8bbaed736d22b0bc7cc455958461ff94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/8bbaed736d22b0bc7cc455958461ff94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6486be6f3a410b4abdb0293895bf0b68/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6486be6f3a410b4abdb0293895bf0b68/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/226b1492b4913e7e44c9c1fb023b1889/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/226b1492b4913e7e44c9c1fb023b1889/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/115079b952cf88522d0298ccc3a66e7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/115079b952cf88522d0298ccc3a66e7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/f80b96a596ac52d2336ca9875fee889c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/f80b96a596ac52d2336ca9875fee889c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/5a14f9de07aaeb40a23403042c705f87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/5a14f9de07aaeb40a23403042c705f87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/c3335bd4d1d182803341ec71c1d691de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/c3335bd4d1d182803341ec71c1d691de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/814e0b0ff971d063095527af94317f7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/814e0b0ff971d063095527af94317f7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/a63e30eed24d4b9db597a878f5479b8b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/a63e30eed24d4b9db597a878f5479b8b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/dfe2dcedbd79d7bdc4c2e6d3cee9aa83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/dfe2dcedbd79d7bdc4c2e6d3cee9aa83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/5cdf14a719e257c34405a2927591ea22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/5cdf14a719e257c34405a2927591ea22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/c74cda7d5b0c2ede73f16fc142590fa8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/c74cda7d5b0c2ede73f16fc142590fa8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/bff675fc8b34851fa40c22414af63bd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/bff675fc8b34851fa40c22414af63bd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/373a3a0d551a823ae0dbb4f94d177d9b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/373a3a0d551a823ae0dbb4f94d177d9b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/70b66cbd1ebf92b672e1b78595208f80/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/70b66cbd1ebf92b672e1b78595208f80/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/860b62ad2adfc7244a90418f84c7d03e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/860b62ad2adfc7244a90418f84c7d03e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/1f6f06e5b9aa85e6519b36d11ff1a092/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/1f6f06e5b9aa85e6519b36d11ff1a092/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/1e61bd30cff359eda708daeef0f13c44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/1e61bd30cff359eda708daeef0f13c44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/419ddb37f365e8dc344808c4de9e8d6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/419ddb37f365e8dc344808c4de9e8d6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/8339a1e4484a2959ae6d1e613a205bb2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/8339a1e4484a2959ae6d1e613a205bb2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/5377e9854105613d62afc41eac3979db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/5377e9854105613d62afc41eac3979db/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d8c3e34d18d08af43b42fd7ba5a65342/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d8c3e34d18d08af43b42fd7ba5a65342/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/ffd6874b00bdc6cfedffafc6be537340/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/ffd6874b00bdc6cfedffafc6be537340/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/1a1ecb3dbb6504b1a37f56ecee9e949c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/1a1ecb3dbb6504b1a37f56ecee9e949c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/9d773b1aa2e7931c5869d1281c38152d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/9d773b1aa2e7931c5869d1281c38152d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fec51e73d71902423e17f38cfb8fb8cf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fec51e73d71902423e17f38cfb8fb8cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/bbb9a8dc273e20a71932f1de0c1bba24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/bbb9a8dc273e20a71932f1de0c1bba24/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a759b2a0176538b7b2bbb6445743cea2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a759b2a0176538b7b2bbb6445743cea2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/31fefb5a83e6b7ae2a009314cdefe448/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/curtisgoud/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/31fefb5a83e6b7ae2a009314cdefe448/AndroidManifest.xml:20:5-44
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/src/main/AndroidManifest.xml

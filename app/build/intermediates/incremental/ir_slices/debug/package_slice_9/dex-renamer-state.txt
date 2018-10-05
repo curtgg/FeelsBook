@@ -1,0 +1,4 @@
+#Thu Oct 04 00:19:06 MDT 2018
+base.0=/Users/curtisgoud/Documents/GitHub/FeelsBook/FeelsBook/app/build/intermediates/transforms/dexMerger/debug/248
+path.0=classes.dex
+renamed.0=classes.dex
