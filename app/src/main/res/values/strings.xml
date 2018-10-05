@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FeelsBook</string>
+    <string name="app_name">cgoud-FeelsBook</string>
     <string name="title_feels">Feels</string>
     <string name="title_book">Book</string>
     <string name="title_activity_book">Book</string>
