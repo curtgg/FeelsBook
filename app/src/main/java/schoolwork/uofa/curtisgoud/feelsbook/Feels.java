@@ -23,8 +23,6 @@ public class Feels extends AppCompatActivity {
     private EditText angerPanel;
 
 
-    private EFeeling selectedEFeeling;
-
     private FeelingController feelingController;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener

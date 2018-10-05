@@ -22,8 +22,8 @@ public class FeelingController {
     private static ArrayList<Feel> feelings = null;
     private static ArrayAdapter<Feel> feelAdapter;
     private static HashMap<EFeeling,Integer> feelingCount;
-
     public static Context context;
+
     public FeelingController(Activity activity){
         //First time run.. init
         if(feelings == null) {
@@ -62,9 +62,6 @@ public class FeelingController {
         return feel.getDateString();
     }
 
-    public static ArrayList<Feel> getFeelings() {
-        return feelings;
-    }
 
     public void setFeelingMessage(Feel feel, String message){
         feel.setFeelingText(message);

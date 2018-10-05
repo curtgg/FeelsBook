@@ -1,4 +1,4 @@
-#Fri Oct 05 11:14:16 MDT 2018
+#Fri Oct 05 11:58:13 MDT 2018
 base.0=/Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
