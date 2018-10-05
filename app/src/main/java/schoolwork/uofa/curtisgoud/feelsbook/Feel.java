@@ -45,7 +45,8 @@ public class Feel implements Comparable<Feel> {
     }
 
     public String getDateString(){
-        //TODO: Credit http://tutorials.jenkov.com/java-date-time/parsing-formatting-dates.html
+        //Credit http://tutorials.jenkov.com/java-date-time/parsing-formatting-dates.html
+        //#Referenced as citation 2
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         return format.format(timestamp);
     }

@@ -87,7 +87,8 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
         Toast.makeText(this,"Changes Saved!",Toast.LENGTH_SHORT).show();
     }
 
-    //TODO: Credit for Picker https://developer.android.com/guide/topics/ui/controls/pickers
+    // Credit for Picker https://developer.android.com/guide/topics/ui/controls/pickers
+    // Citation number 3 in README
     public void editDate(){
         Calendar cal = Calendar.getInstance();
         int year = cal.get(cal.YEAR);
@@ -106,7 +107,8 @@ public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDa
 
     @Override
     @SuppressWarnings("deprecation")
-    //TODO: Credit, chaining of two pickers https://www.youtube.com/watch?v=a_Ap6T4RlYU
+    //Credit, chaining of two pickers https://www.youtube.com/watch?v=a_Ap6T4RlYU
+    //Citation number 4 in README
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         Calendar cal = Calendar.getInstance();
         int hour = cal.get(cal.HOUR);

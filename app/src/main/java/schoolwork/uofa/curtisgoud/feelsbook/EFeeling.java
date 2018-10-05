@@ -6,9 +6,9 @@ package schoolwork.uofa.curtisgoud.feelsbook;
 //The added functions allow increased flexibility and usage
 
 
-//TODO:Help with stringification of Enumerables was obtained here:
+//Help with stringification of Enumerables was obtained here:
 //https://stackoverflow.com/questions/3978654/best-way-to-create-enum-of-strings
-
+//#Reference 1 in Citations
 public enum EFeeling {
     LOVE("Love"),
     JOY("Joy"),
