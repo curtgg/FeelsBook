@@ -17,6 +17,9 @@ import com.google.gson.reflect.TypeToken;
 
 public class IOController {
 
+
+    //Read and write assistance was obtained through the
+    //Course labs (Citation #5)
     static ArrayList<Feel> loadFromDisk(){
         try{
             FileInputStream fis = FeelingController.context.openFileInput("feels");

@@ -61,7 +61,16 @@ Last Edited: September 14, 2015
 Accessed on: October 3rd, 2018
 Source: https://github.com/joshua2ua/lonelyTwitter
 
+6. Android Alert DialogBuilder
+Assistance was obtained through the Android Documentation
+on building alerts to notify the user. Code was taken from this source
+to build the yes/no buttons
 
+Published by: developer.android.com
+Written by: N/A
+Updated: September 27, 2018
+Date Accessed: Wednesday October 3rd, 2018
+Source: https://developer.android.com/guide/topics/ui/dialogs
 
 
 

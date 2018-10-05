@@ -105,15 +105,13 @@ public class Feels extends AppCompatActivity {
         setContentView(R.layout.activity_feels);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationMenu);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-
         initListeners();
     }
 
     @Override
     protected void onStart(){
         super.onStart();
-        FeelingController.context = this;
+        FeelingController.context = this; //Set context (For user I/O)
         feelingController = new FeelingController(this);
     }
 
@@ -127,6 +125,7 @@ public class Feels extends AppCompatActivity {
         sadnessPanel = (EditText) findViewById(R.id.feelsSadness);
         angerPanel = (EditText) findViewById(R.id.feelsAnger);
 
+        //When we resume.. we want to check the count of our feels
         lovePanel.setText(EFeeling.LOVE.toString() + ": " + feelingController.getFeelCount(EFeeling.LOVE));
         surprisePanel.setText(EFeeling.SURPRISE.toString() + ": " + feelingController.getFeelCount(EFeeling.SURPRISE));
         fearPanel.setText(EFeeling.FEAR.toString() + ": " + feelingController.getFeelCount(EFeeling.FEAR));
@@ -136,8 +135,8 @@ public class Feels extends AppCompatActivity {
 
     }
 
-    //Info on Alerts obtained here:
-    //https://developer.android.com/guide/topics/ui/dialogs#java
+    //Assistance with alerts was obtained through
+    //the android documentation (Citation #6)
     private void newFeelingAlert(final int idx){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Feeling Added!");
