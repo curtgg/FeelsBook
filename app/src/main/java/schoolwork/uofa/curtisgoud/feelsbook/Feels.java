@@ -54,48 +54,49 @@ public class Feels extends AppCompatActivity {
         buttonSurprise.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                feelingController.addNewFeeling(EFeeling.SURPRISE,"");
-                newFeelingAlert();
+               int fl = feelingController.addNewFeeling(EFeeling.SURPRISE,"");
+                newFeelingAlert(fl);
             }
         });
 
         buttonAnger.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                feelingController.addNewFeeling(EFeeling.ANGER,"");
-                newFeelingAlert();
+                int fl = feelingController.addNewFeeling(EFeeling.ANGER,"");
+                newFeelingAlert(fl);
             }
         });
 
         buttonFear.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                feelingController.addNewFeeling(EFeeling.FEAR,"");
-                newFeelingAlert();
+                int fl = feelingController.addNewFeeling(EFeeling.FEAR,"");
+                newFeelingAlert(fl);
             }
         });
 
         buttonJoy.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                feelingController.addNewFeeling(EFeeling.JOY,"");
-                newFeelingAlert();
+                int fl = feelingController.addNewFeeling(EFeeling.JOY,"");
+                newFeelingAlert(fl);
             }
         });
 
         buttonLove.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                feelingController.addNewFeeling(EFeeling.LOVE,"");
-                newFeelingAlert();
+                int fl = feelingController.addNewFeeling(EFeeling.LOVE,"");
+                newFeelingAlert(fl);
             }
         });
 
         buttonSadness.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                feelingController.addNewFeeling(EFeeling.SADNESS,"");
-                newFeelingAlert();
+                int fl = feelingController.addNewFeeling(EFeeling.SADNESS,"");
+                newFeelingAlert(fl);
+
             }
         });
     }
@@ -139,14 +140,14 @@ public class Feels extends AppCompatActivity {
 
     //Info on Alerts obtained here:
     //https://developer.android.com/guide/topics/ui/dialogs#java
-    private void newFeelingAlert(){
+    private void newFeelingAlert(final int idx){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Feeling Added!");
         builder.setMessage("Would you like to add a message to the feeling?");
         builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                ViewController.newActivity(Feels.this,FeelItem.class,-1);
+                ViewController.newActivity(Feels.this,FeelItem.class, idx);
             }
         });
         builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {

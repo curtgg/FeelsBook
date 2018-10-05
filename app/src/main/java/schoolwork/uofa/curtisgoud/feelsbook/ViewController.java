@@ -20,10 +20,10 @@ public final class ViewController {
         }
     }
 
-    public static <T extends AppCompatActivity> boolean  newActivity(Context context,Class<T> activityClass,int idx){
+    public static <T extends AppCompatActivity> boolean  newActivity(Context context,Class<T> activityClass,int f){
         Intent intent = new Intent(context, activityClass);
         //TODO: Credit android docs for this
-        intent.putExtra("ARG_IDX",idx);
+        intent.putExtra("ARG_IDX",f);
         try{
             context.startActivity(intent);
             return true;

@@ -89,14 +89,15 @@ public class FeelingController {
         return feelings.get(idx);
     }
 
-    public void addNewFeeling(EFeeling feel, String text){
+    //return index of new feeling
+    public int addNewFeeling(EFeeling feel, String text){
         Feel Fl = new Feel(feel,text);
         feelings.add(Fl);
         addFeelCount(Fl);
         IOController.saveToDisk(feelings);
         sortFeels();
         feelAdapter.notifyDataSetChanged();
-        Log.d("Feelsbook","new feeling! " + Fl.getFeelingText());
+        return feelings.indexOf(Fl);
     }
 
     public void removeFeel(int idx){
