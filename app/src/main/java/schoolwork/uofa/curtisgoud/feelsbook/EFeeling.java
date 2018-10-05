@@ -1,6 +1,12 @@
 package schoolwork.uofa.curtisgoud.feelsbook;
 
-//Help with stringification of Enumerables was obtained here:
+
+//This enumerable is used in the Feel class to categorize the
+//Types of feels, allowing us to have a single class to represent feelings
+//The added functions allow increased flexibility and usage
+
+
+//TODO:Help with stringification of Enumerables was obtained here:
 //https://stackoverflow.com/questions/3978654/best-way-to-create-enum-of-strings
 
 public enum EFeeling {

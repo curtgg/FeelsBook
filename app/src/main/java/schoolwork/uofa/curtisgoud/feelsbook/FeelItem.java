@@ -16,6 +16,9 @@ import android.widget.Toast;
 import java.util.Calendar;
 import java.util.Date;
 
+//This view displays all info on a Feel
+//and provides means to edit them
+
 public class FeelItem extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
 
     private FeelingController feelingController;

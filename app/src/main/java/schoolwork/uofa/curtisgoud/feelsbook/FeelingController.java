@@ -13,6 +13,10 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 
+//This class handles controlling of the Feelings view and model
+//It allows for minimal coupling between the views that use the
+//feelings list
+
 public class FeelingController {
 
     private static ArrayList<Feel> feelings = null;

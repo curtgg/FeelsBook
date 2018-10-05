@@ -5,6 +5,10 @@ import android.support.annotation.NonNull;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+//This singular class is used to represent feelings
+//And is categorized by an EFeeling. This allows us to save
+//on creating 6 different classes for each Feel
+
 public class Feel implements Comparable<Feel> {
     private EFeeling EFeeling;
     private Date timestamp;

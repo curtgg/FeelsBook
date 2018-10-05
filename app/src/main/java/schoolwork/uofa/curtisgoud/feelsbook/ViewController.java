@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
+//This class allows a static means of changing Views with only
+//a single line of code. It expects specific View classes that are
+//permissible to be passed in through use of Generics
 
 public final class ViewController {
 

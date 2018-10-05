@@ -11,6 +11,9 @@ import android.widget.ArrayAdapter;
 
 import com.google.gson.reflect.TypeToken;
 
+//This controller manages solely the read/write of feelings to disk
+//This class was separation from the controller to allow
+//separation of concerns
 
 public class IOController {
 
