@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Oct 05 10:32:47 MDT 2018
+#Fri Oct 05 14:13:11 MDT 2018
 0.baseType=DIRECTORY
 0.base=/Users/curtisgoud/Documents/GitHub/FeelsBook/cgoud-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/0
 0.path=classes.dex
